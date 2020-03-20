@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Cloud Assignment 3</title>
+<!-- 	<link rel="stylesheet" type="text/css" href="http://getbootstrap.com/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css"> -->
+</head>
+<body style="background-color:#e8e7e5;">
+	<h1><p align="center"> Add Note to Book {{ b_name }} </p></h1>
+
+	<br><br><br><br>
+
+	<!-- <h4> Enter keyword for searching... </h4> -->
+	<h2>
+	<table>
+		<th><b><a href="http://127.0.0.1:5000" type="button" style="color: #7d8514">BACK   TO   MAIN   APPLICATION</a></b></th>
+		<th></th><th></th><th></th>
+		<th></th><th></th><th></th>
+		<th></th><th></th><th></th>
+		<th></th><th></th><th></th>
+		<th></th><th></th><th></th>
+		<th></th><th></th><th></th>
+		<th><b><a href="http://127.0.0.1:5002" type="button" style="color: #7d8514">NOTES   RETRIEVAL   APPLICATION</a></b></th>	
+	</table>
+	</h2>
+	<br><br><br><br>
+	<div class="container">
+			<th>
+				<form method="POST" action="/response/{{ b_name }}">
+					<h3><b><p> You can save notes using this page: </p></b></h3><br>
+					<label for="note_s">Note</label>
+					<input type="text" name="note_s">
+					<input type="submit" value="Submit">
+				</form>	
+			</th>
+			<p><h4 style="color: red">{{ err_msg }}</h4></p>
+			<p><h4 style="color: green">{{ succ_msg }}</h4></p>
+		<br><br><br><br>
+
+<!-- 		<p> Records fetched:  {{ le }}</p>
+		<th>
+		<div class="container">
+		{% for i in list_key: %}
+				<td>
+				{{ i }}
+				<br> -->
+				<!-- {% for j in i: %}
+					<tr>{{ i[j] }}</tr>
+					<br>
+				{% endfor %} -->
+<!-- 				</td>
+		{% endfor %}
+		</div>
+		</th>
+	</div>
+	<div class="container">
+		<table>
+			<th>
+				<form method="POST" action="/response">
+					<p> Enter Note Title and Note for submission (Remember Note Title for note retrieval): </p><br>
+					<label for="note_title">Note Title</label>
+					<input type="text" id="note_title" name="note_title">
+					<label for="note_s">Note</label>
+					<input type="text" id="note_s" name="note_s">
+					<input type="submit" value="Submit">
+				</form>	
+			</th>
+			<th>
+				<div class="container">
+					<p>{{ note_s }}</p>
+				</div>
+			</th>
+		</table>
+		<br><br><br><br>
+	</div>
+	<div class="container">
+		<table>
+			<th>
+				<form method="POST" action="/response">
+					<label for="note_r">Enter Note Title for retrieval: </label><br>
+					<input type="text" id="note_r" name="note_r">
+					<input type="submit" value="Submit">
+				</form>
+			</th>
+			<th>
+				<div class="container">
+					<p>{{ err_msg }}</p>
+					<p>{{ list_notes }}</p>
+ -->					<!-- <p>{{ n_label }} : {{ list_notes }}</p> -->
+<!-- 				</div>
+
+			</th>
+		</table>
+		<br><br><br><br> -->
+	</div>
+
+</body>
+</html>

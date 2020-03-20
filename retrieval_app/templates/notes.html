@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Cloud Assignment 3</title>
+<!-- 	<link rel="stylesheet" type="text/css" href="http://getbootstrap.com/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css"> -->
+</head>
+<body style="background-color:#e8e7e5;">
+	<h1><p align="center"> Retrieved Notes </p></h1>
+	<br><br><br><br>
+	<h2>
+	<table>
+		<th><b><a href="http://127.0.0.1:5000" type="button" style="color: #7d8514">BACK   TO   MAIN   APPLICATION</a></b></th>
+		<th></th><th></th><th></th>
+		<th></th><th></th><th></th>
+		<th></th><th></th><th></th>
+		<th></th><th></th><th></th>
+		<th></th><th></th><th></th>
+		<th></th><th></th><th></th>
+		<!-- <th><b><a href="http://127.0.0.1:5001" type="button" style="color: #7d8514">NOTES   ADDING   APPLICATION</a></b></th>	
+		<th></th><th></th><th></th>
+		<th></th><th></th><th></th>
+		<th></th><th></th><th></th>
+		<th></th><th></th><th></th>
+		<th></th><th></th><th></th>
+		<th></th><th></th><th></th> -->
+		<th><b><a href="http://127.0.0.1:5002" type="button" style="color: #7d8514">NOTES   RETRIEVING   APPLICATION</a></b></th>
+	</table>
+	</h2>
+	<br><br><br>
+	<h3><b>Notes of "{{ book_str }}" are listed below: </b></h3>
+	
+	<div>
+		<ol>
+		{% for i in list_notes: %}
+			<li><p><b>{{ i.note }}</b></p></li>
+		{% endfor %}
+		</ol>
+	</div>
+
+</body>
+</html>
