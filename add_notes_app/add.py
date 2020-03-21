@@ -87,7 +87,7 @@ def added(b_name):
 # 		if flag == 0:
 # 			return render_template('index.html', err_msg = "Sorry, there is no note with that title. Please try again.")
 
-# if __name__ == "__main__":
-# 	app.debug = True
-# 	app.run()
+if __name__ == "__main__":
+	add.debug = True
+	add.run(host='0.0.0.0', port=5001)
 
